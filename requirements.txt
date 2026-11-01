@@ -1,0 +1,28 @@
+langchain-core>=1.0
+langchain-ollama>=1.0
+langchain-groq>=1.0
+langchain-google-genai>=4.0
+python-dotenv>=1.0
+
+# Agent-3 (reader): tool-calling agent + web research tools
+langchain>=1.0
+tavily-python>=0.5
+beautifulsoup4>=4.12
+requests>=2.31
+rich>=13.0
+
+# Agent-3 RAG: chunk/embed/retrieve gathered evidence before the verdict
+langchain-text-splitters>=1.0
+langchain-chroma>=0.2
+langchain-huggingface>=0.1
+sentence-transformers>=3.0
+
+# Agent-4 (verifier): cross-encoder rerank + NLI entailment/contradiction over Agent-3's evidence
+chromadb>=0.5
+transformers>=4.40
+torch>=2.0
+Pillow>=12.0
+
+# Frontend
+streamlit>=1.38
+
